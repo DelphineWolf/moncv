@@ -1,0 +1,114 @@
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+  padding: 20px;
+}
+
+/* Container principal */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 1100px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Bande du haut (nom + contact) */
+tr:first-child {
+  background: #2c3e50;
+  color: #fff;
+}
+
+tr:first-child td {
+  padding: 20px;
+  vertical-align: top;
+}
+
+tr:first-child p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+tr:first-child td:last-child {
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+/* Colonnes */
+td {
+  padding: 20px;
+  vertical-align: top;
+}
+
+/* Titres */
+h2 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  border-bottom: 2px solid #2c3e50;
+  padding-bottom: 4px;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-top: 12px;
+  color: #34495e;
+}
+
+p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+/* Listes */
+ul {
+  margin: 8px 0 12px 20px;
+  font-size: 0.9rem;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+
+/* Deux colonnes dans le corps */
+tr:nth-child(2) {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+/* Petits effets */
+a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  tr:nth-child(2) {
+    grid-template-columns: 1fr;
+  }
+
+  tr:first-child td:last-child {
+    text-align: left;
+    margin-top: 10px;
+  }
+}
